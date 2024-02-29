@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Lobster&family=Pompiere&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+:root{
+    --bg-color: #fff;
+    --text-color: #000;
+}
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+.darkmode{
+    --bg-color: #000;
+  color: #fff;
+}
+.nav{
+display: flex;
+justify-content: space-between;
+justify-content: space-around;
+margin-top: 1rem;
+place-items: center;
+font-family: 'Lobster';
+font-size: 1.5rem;
+text-align: center;
+border: 1px solid;
+border-top: none;
+border-left: none;
+border-right: none;
+border-bottom-color: rgb(82, 134, 4);
+border-radius: 10px;
+ border-bottom-width: 0.2rem;
+}
+.nav p {
+    color: rgb(82, 134, 4);
+    font-size: 3rem;
+}
+.nav img {
+    width: 5%;
+    border-radius: 30px;
+}
+button{
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    color: rgb(82, 134, 4);
+    display: none;
+}
+.line {
+    display: flex;
+    padding: 2rem;
+}
+.nav a{
+    padding: 1rem;
+}
+.links {
+    border: 1px solid;
+    width: 20%;
+}
+.links a {
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-family: 'Dancing Script';
+    color: rgb(82, 134, 4);
+    font-weight: 800;
+}
+.bar{
+    display: none;
+}
+ .link {
+     margin-top: 1rem;
+     display: block;
+ }
+.link a {
+ display: block;
+ padding: 1rem;
+ font-size: 1.5rem;
+ text-decoration: none;
+ color: rgb(82, 134, 4);
+ font-family: 'Dancing Script';
+ font-weight: 800;
+}
+
+.container{
+    /* position: absolute; */
+    width: 30%;
+    border: 10px solid rgb(82, 134, 4);
+    overflow: hidden;
+  margin: auto;                                    
+    margin-top: 2rem;
+    z-index: 1; 
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.wrapper{
+    display: flex;
+    animation: slide 16s infinite;
+}
+@keyframes slide {
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}
+   .wrapper img{
+width: 100%;
+}
+h1{
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.products {
+    /* border: 1px solid; */
+    overflow: scroll;
+    display: flex;
+}
+.products img {
+    width: 10%;
+    padding: 1rem;
+}
+h2{
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    text-align: center; 
+}
+.mobile{
+    /* border: 1px solid; */
+    overflow: scroll;
+    display: flex;
+}
+.mobile img{
+    width: 15%;
+    padding: 1rem;
+}
+.laptops{
+    overflow: scroll;
+    display: flex;
+}
+.laptops img{
+    width: 20%;
+    padding: 1rem;
+}
+.skincare{
+    overflow: scroll;
+    display: flex;
+}
+.skincare img{
+    width: 15%;
+    padding: 1rem;
+}
+
+.fashion{
+    overflow: scroll;
+    display: flex;
+}
+.fashion img{
+    width: 10%;
+    padding: 1rem;
+}
+.furniture{
+    overflow: scroll;
+    display: flex;
+}
+.furniture img{
+    width: 10%;
+    padding: 1rem;
+}
+h3{
+    text-align: center;
+    margin-top: 1rem;
+}
+.cocktail{
+    overflow: scroll;
+    display: flex;
+}
+.cocktail img{
+    width: 10%;
+    padding: 1rem;
+}
+footer{
+  padding: 3rem;
+  margin-top: 7rem;
+  background-color:  rgb(200, 247, 181);
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+.footer-l {
+    --bg-color: #000;
+    color: #fff;
+}
+footer p {
+font-family: 'Dancing Script';
+}
+.icons{
+    font-size: 2rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+h4{
+    font-size: 2rem;
+    color: rgb(82, 134, 4);
+    font-family: 'Lobster';
+}
+.footer{
+    text-align: center;
+    color: rgb(82, 134, 4);
+    margin-top: 1rem;
+}
+i{
+    color: rgb(82, 134, 4);
+    cursor: pointer;
+}
+i:hover{
+    font-size: 1rem;
+    transition: all 1s linear;
+}
+a{
+    text-decoration: none;
+    color: rgb(82, 134, 4);
+    font-family: 'Lobster';
+}
+a:hover{
+    font-size: 1.2rem;
+    transition: all  linear;
+}
+.flex {
+    display: flex;
+}
+.foot {
+    text-align: center;
+    margin: auto;
+    font-size: 1.5rem;
+}
+.foot a{
+   margin-top: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+    .nav img {
+        width: 10%;
+    }
+    button {
+        text-align: center;
+        padding: 0.5rem;
+        font-size: 1rem;
+        cursor: pointer;
+        color: rgb(82, 134, 4);
+        display: block;
+    }
+    .line{
+        display: none;
+    }
+    .links{
+        display: none;
+    }
+    .bar {
+       position: fixed;
+       border: 1px solid;
+       top: 0;
+       bottom: 0;
+       width: 100%;
+       background-color: rgba(82, 134, 4, 0.568);
+       transform: scale(0);
+       display: block;
+       z-index: 2;
+    }
+    .sidebar {
+        position: fixed;
+        border: 1px solid;
+        top: 0;
+        bottom: 0;
+        width: 75%;
+        right: 0;
+        transform: scale(0);
+        transition: all 0.3s linear;
+        background-color: rgb(200, 247, 181);
+    }
+    .show-sidebar {
+        transform: scale(1);
+    }
+.close-sidebar {
+    transform: scale(0);
+}
+    .link {
+        margin-top: 1rem;
+        display: block;
+    }
+   .link a {
+    display: block;
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: rgb(82, 134, 4);
+    font-family: 'Dancing Script';
+    font-weight: 800;
+   }
+  img{
+width: 100%;
+}
+h1{
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.products {
+    /* border: 1px solid; */
+    overflow: scroll;
+    display: flex;
+}
+.products img {
+    width: 25%;
+    padding: 1rem;
+}
+h2{
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    text-align: center; 
+}
+.mobile{
+    /* border: 1px solid; */
+    overflow: scroll;
+    display: flex;
+}
+.mobile img{
+    width: 25%;
+    padding: 1rem;
+}
+.container{
+    /* position: absolute; */
+    margin: auto;
+    width: 50%;
+    border: 10px solid rgb(82, 134, 4);
+    overflow: hidden;
+    left: 25%;
+    margin-top: 2rem;
+}
+.wrapper{
+    display: flex;
+    animation: slide 16s infinite;
+}
+.pro img{
+    width: 20%;
+    padding: 2rem;
+}
+.laptops{
+    overflow: scroll;
+    display: flex;
+}
+.laptops img{
+    width: 25%;
+    padding: 1rem;
+}
+.skincare{
+    overflow: scroll;
+    display: flex;
+}
+.skincare img{
+    width: 25%;
+    padding: 1rem;
+}
+.fashion{
+    overflow: scroll;
+    display: flex;
+}
+.fashion img{
+    width: 25%;
+    padding: 1rem;
+}
+.furniture{
+    overflow: scroll;
+    display: flex;
+}
+.furniture img{
+    width: 25%;
+    padding: 1rem;
+}
+h3{
+    text-align: center;
+    margin-top: 1rem;
+}
+.cocktail{
+    overflow: scroll;
+    display: flex;
+}
+.cocktail img{
+    width: 25%;
+    padding: 1rem;
+}
+
+}
